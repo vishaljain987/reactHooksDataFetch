@@ -25,6 +25,7 @@ const useDataFetchReducer = (initialData, initialUrl) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isError, setIsError] = useState(false);
 
+  //reducter function and initial state value
   const [state, dispatch] = useReducer(reducerFunction, {
     isLoading: false,
     data: initialData,
